@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 100px;
+    background-color: rgb(207, 216, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 570px;
+    width: 300px;
+    background: linear-gradient(45deg, rgb(255, 54, 138), rgb(255, 116, 2));
+    margin: 10px auto;
+    box-shadow: 5px 5px 10px rgb(167, 167, 167);
+}
+
+main .inp {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100%;
+    height: 30%;
+}
+
+main .inp #inp-screen {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    height: 50%;
+    width: 270px;
+    background: linear-gradient(86deg, rgb(255, 54, 138), rgb(255, 116, 2));
+    border: none;
+    outline-style: none;
+    padding: 12px;
+    /* overflow-x: visible; */
+}
+
+main .inp #out-screen {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    height: 50%;
+    width: 270px;
+    background: linear-gradient(49deg, rgb(255, 54, 138), rgb(255, 116, 2));
+    border: none;
+    outline-style: none;
+    padding: 12px;
+    /* overflow-x: visible; */
+}
+
+.btn {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn .top-btn {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.top-btn button {
+    color: rgb(100, 100, 100);
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px 15px;
+    width: 25%;
+    border: none;
+}
+
+.btn .num-btn {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.btn .num-btn .num {
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    margin: 0;
+}
+
+.btn .num-btn .num button {
+    color: rgb(100, 100, 100);
+    font-size: 1.5rem;
+    padding: 25px 15px;
+    width: 33%;
+    background-color: white;
+    border: none;
+}
+
+.btn .num-btn .operator-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+    margin: 0;
+}
+
+.btn .num-btn .operator-btn button {
+    color: rgb(100, 100, 100);
+    font-size: 1.5rem;
+    padding: 25px 15px;
+    width: 75px;
+    margin: 0;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+button:active {
+    background-color: rgb(175, 175, 175);
+}
+
+.num-btn .num button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.num-btn .num button:active {
+    background-color: rgb(175, 175, 175);
+}
